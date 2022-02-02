@@ -6,6 +6,8 @@
 # ... https://github.com/prof-rossetti/intro-to-python/blob/main/exercises/rock-paper-scissors/README.md
 #
 
+#welcome message
+print("Welcome Player One to my Rock-Paper-Scissors game")
 
 
 
@@ -52,5 +54,6 @@ elif u == "scissors":
     else:
         print("Rock crushes scissors. You lost! It's okay.")
 
-
 #final results
+
+print("Thanks for playing! Please play again!")
