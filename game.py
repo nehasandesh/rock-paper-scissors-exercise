@@ -14,11 +14,21 @@
 u = input("Please choose one: 'Rock', 'Paper', 'Scissors': ")
 
 print("User chose:", u)
+
 #validations
 
 
 
 #computer choice
+    #using the random module
+    
+import random
+
+options = ["rock", "paper", "scissors"]
+
+computer_choice = random.choice(options)
+
+print("Computer Chose:", computer_choice)
 
 
 
