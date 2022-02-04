@@ -6,20 +6,27 @@
 # ... https://github.com/prof-rossetti/intro-to-python/blob/main/exercises/rock-paper-scissors/README.md
 #
 
-#welcome message
-print("Welcome Player One to my Rock-Paper-Scissors game")
+choices = ["rock", "paper", "scissors"]
 
+#welcome message
+print("------------------")
+print("Welcome Player One to my Rock-Paper-Scissors game...")
+print("------------------")
 
 
 #ask for a user input
 
-u = input("Please choose one: Rock, Paper, or Scissors:")
-
-print("User chose:", u)
+u = input("Please choose one: 'Rock', 'Paper', or 'Scissors':" )
 
 #validations
 
+u = u.lower()
 
+if u in choices:
+    print("User chose:", u)
+else:
+    print("You have entered an incorrect input and cannot continue playing, sorry!")
+    exit()
 
 #computer choice
     #using the random module (version 1)
@@ -31,6 +38,7 @@ options = ["rock", "paper", "scissors"]
 computer_choice = random.choice(options)
 
 print("Computer Chose:", computer_choice)
+print("------------------")
 
 
 #determine winner
@@ -56,4 +64,5 @@ elif u == "scissors":
 
 #final results
 
+print("------------------")
 print("Thanks for playing! Please play again!")
