@@ -45,7 +45,7 @@ print("------------------")
 #inspired from slack (eugenie) - nested if statements
 
 if u == computer_choice:
-    print("Both players chose", u , "It's a tie!")
+    print("Both players chose", u, " It's a tie!")
 elif u == "paper":
     if computer_choice == "rock":
         print("Paper covers rock. You won!")
